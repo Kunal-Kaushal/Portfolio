@@ -132,7 +132,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: EASE, delay: 0.4 }}
-          className="flex justify-center lg:justify-end"
+          className="flex w-full justify-center lg:justify-end"
         >
           <TerminalCard />
         </motion.div>

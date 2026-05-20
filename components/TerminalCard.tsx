@@ -75,7 +75,7 @@ export default function TerminalCard() {
     <motion.div
       animate={{ y: [0, -6, 0] }}
       transition={{ duration: 6, ease: "easeInOut", repeat: Infinity }}
-      className="w-[400px] max-w-full overflow-hidden rounded-[12px] font-mono"
+      className="w-full max-w-[400px] overflow-hidden rounded-[12px] font-mono"
       style={{
         background: "rgba(10,10,10,0.65)",
         backdropFilter: "blur(12px)",

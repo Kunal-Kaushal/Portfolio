@@ -3,7 +3,7 @@ export default function ArchonDiagram() {
     <div className="group relative overflow-hidden rounded-xl border border-[#1f1f1f] bg-surface/60 p-6 transition-all duration-200 hover:-translate-y-[3px] hover:border-[#2a2a2a] hover:shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.03),transparent_70%)]" />
       <div className="overflow-x-auto">
-        <svg viewBox="0 0 560 380" className="h-auto w-full min-w-[400px] font-mono">
+        <svg viewBox="0 0 560 380" className="h-auto w-full font-mono">
         <defs>
           <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
             <path d="M0,0 L10,5 L0,10 z" fill="#737373" />
