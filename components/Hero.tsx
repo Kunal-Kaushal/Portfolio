@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-screen items-center overflow-hidden pt-16 pb-16 lg:pt-24 lg:pb-20"
+      className="relative flex min-h-screen items-center overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-20"
     >
       {/* Multi-layer radial glows */}
       <div
@@ -65,7 +65,7 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             variants={fadeUp}
-            className="mt-7 font-display text-[44px] font-semibold leading-[1.05] tracking-tight text-white sm:text-[52px] lg:text-[58px]"
+            className="mt-7 font-display text-[38px] font-semibold leading-[1.1] tracking-tight text-white sm:text-[44px] lg:text-[58px]"
           >
             Kunal Kaushal
           </motion.h1>

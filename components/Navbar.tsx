@@ -1,11 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const EASE = [0.25, 0.1, 0.25, 1] as const;
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -59,8 +61,8 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* Right: Resume Button */}
-        <div className="flex flex-1 items-center justify-end">
+        {/* Right: Resume Button & Mobile Toggle */}
+        <div className="flex flex-1 items-center justify-end gap-4">
           <a
             href="/resume.pdf"
             target="_blank"
@@ -69,8 +71,46 @@ export default function Navbar() {
           >
             Resume
           </a>
+          <button
+            className="md:hidden text-[#a3a3a3] transition-colors hover:text-[#f5f5f5]"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
         </div>
       </nav>
+
+      {/* Mobile Menu Dropdown */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="absolute inset-x-0 top-16 flex flex-col border-b border-[#141414] bg-[#0a0a0a]/95 px-6 py-6 shadow-2xl backdrop-blur-xl md:hidden"
+          >
+            <ul className="flex flex-col gap-6 text-[15px] text-[#a3a3a3]">
+              {[
+                { href: "#about", label: "About" },
+                { href: "#work", label: "Projects" },
+                { href: "#stack", label: "Skills" },
+                { href: "#contact", label: "Contact" },
+              ].map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block cursor-pointer transition-colors duration-200 hover:text-[#2dd4bf]"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   );
 }
