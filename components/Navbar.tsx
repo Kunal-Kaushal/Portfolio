@@ -62,7 +62,7 @@ export default function Navbar() {
         {/* Right: Resume Button */}
         <div className="flex flex-1 items-center justify-end">
           <a
-            href="/resume.pdf"
+            href="/Portfolio/resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="rounded-md border border-[#222] bg-white/[0.03] px-4 py-1.5 text-[13.5px] font-medium text-[#f5f5f5] transition-colors duration-200 hover:border-[#2dd4bf]/40 hover:bg-[#2dd4bf]/10 hover:text-[#2dd4bf]"
