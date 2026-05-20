@@ -7,6 +7,7 @@ const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrai
 const geist = DM_Sans({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kunalkaushal.tech"),
   title: "Kunal Kaushal — Generative AI Developer",
   description:
     "GenAI Developer building production-grade RAG pipelines, LLM-powered backends, and multi-agent architectures. Based in Noida, India.",
@@ -14,14 +15,25 @@ export const metadata: Metadata = {
     title: "Kunal Kaushal — Generative AI Developer",
     description:
       "GenAI Developer building production-grade RAG pipelines, LLM-powered backends, and multi-agent architectures.",
+    url: "https://kunalkaushal.tech",
+    siteName: "Kunal Kaushal",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Kunal Kaushal — GenAI Developer",
+      },
+    ],
     type: "website",
     locale: "en_IN",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Kunal Kaushal — Generative AI Developer",
     description:
       "GenAI Developer building production-grade RAG pipelines, LLM-powered backends, and multi-agent architectures.",
+    images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
 };
