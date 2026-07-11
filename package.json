@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out -t"
   },
   "dependencies": {
     "framer-motion": "11.11.17",
