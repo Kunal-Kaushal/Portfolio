@@ -11,9 +11,12 @@ import Contact from "@/components/Contact";
 import MouseGlow from "@/components/MouseGlow";
 import Footer from "@/components/Footer";
 
+import Preloader from "@/components/Preloader";
+
 export default function Page() {
   return (
     <main className="relative">
+      <Preloader />
       {/* Global starfield — fixed so it persists across all sections */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <StarField />
