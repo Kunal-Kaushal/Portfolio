@@ -1,6 +1,14 @@
 import Reveal from "./Reveal";
 
-const EXPERIENCE = [
+type ExperienceItem = {
+  company: string;
+  role: string;
+  date: string;
+  location: string;
+  description?: string;
+};
+
+const EXPERIENCE: ExperienceItem[] = [
   {
     company: "Droisys",
     role: "AI Intern",
