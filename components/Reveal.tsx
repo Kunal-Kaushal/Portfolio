@@ -26,7 +26,6 @@ export default function Reveal({
       variants={variants}
       transition={{ duration: 0.7, ease: EASE, delay }}
       className={className}
-      style={{ willChange: "opacity, transform" }}
     >
       {children}
     </motion.div>

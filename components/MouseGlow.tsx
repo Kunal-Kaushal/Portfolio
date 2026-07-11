@@ -5,10 +5,18 @@ export default function MouseGlow() {
   const glowRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let animationFrameId: number;
+
     const updateMousePosition = (ev: MouseEvent) => {
-      if (glowRef.current) {
-        glowRef.current.style.background = `radial-gradient(500px circle at ${ev.clientX}px ${ev.clientY}px, rgba(45,212,191,0.035), transparent 50%)`;
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
       }
+      
+      animationFrameId = requestAnimationFrame(() => {
+        if (glowRef.current) {
+          glowRef.current.style.background = `radial-gradient(500px circle at ${ev.clientX}px ${ev.clientY}px, rgba(45,212,191,0.035), transparent 50%)`;
+        }
+      });
     };
     
     if (glowRef.current) {
@@ -16,7 +24,11 @@ export default function MouseGlow() {
     }
 
     window.addEventListener("mousemove", updateMousePosition, { passive: true });
-    return () => window.removeEventListener("mousemove", updateMousePosition);
+    
+    return () => {
+      window.removeEventListener("mousemove", updateMousePosition);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    };
   }, []);
 
   return (

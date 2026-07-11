@@ -11,18 +11,7 @@ export default function About() {
             <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#2dd4bf]/80">
               ABOUT
             </span>
-            <h2
-              className="mt-3 font-display text-[28px] font-semibold tracking-tight sm:text-[34px] md:text-[38px]"
-              style={{
-                background: "linear-gradient(135deg, #ffffff 0%, #e8e8e8 50%, rgba(45,212,191,0.8) 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
-            >
-              Engineering AI workflows from concept to production.
-            </h2>
-            <div className="mt-6 space-y-5 text-[15px] leading-[1.8] text-[#f5f5f5]">
+            <div className="mt-4 space-y-5 text-[15px] leading-[1.8] text-[#f5f5f5]">
               <p>
                 I&apos;m a Generative AI Developer specializing in RAG-based systems, multi-agent orchestration, and secure backend architectures. I focus on bridging the gap between experimental LLM models and real-world applications.
               </p>
@@ -64,11 +53,11 @@ export default function About() {
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">5</span>
-                <span>    name: <span className="text-[#79c0ff]">str</span> = <span className="text-[#a5d6ff]">"Kunal Kaushal"</span></span>
+                <span>    name: <span className="text-[#79c0ff]">str</span> = <span className="text-[#a5d6ff]">&quot;Kunal Kaushal&quot;</span></span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">6</span>
-                <span>    headline: <span className="text-[#79c0ff]">str</span> = <span className="text-[#a5d6ff]">"GenAI Developer"</span></span>
+                <span>    headline: <span className="text-[#79c0ff]">str</span> = <span className="text-[#a5d6ff]">&quot;GenAI Developer&quot;</span></span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">7</span>
@@ -76,15 +65,15 @@ export default function About() {
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">8</span>
-                <span>        <span className="text-[#a5d6ff]">"RAG Pipelines"</span>,</span>
+                <span>        <span className="text-[#a5d6ff]">&quot;RAG Pipelines&quot;</span>,</span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">9</span>
-                <span>        <span className="text-[#a5d6ff]">"Multi-Agent AI"</span>,</span>
+                <span>        <span className="text-[#a5d6ff]">&quot;Multi-Agent AI&quot;</span>,</span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">10</span>
-                <span>        <span className="text-[#a5d6ff]">"Backend Architectures"</span></span>
+                <span>        <span className="text-[#a5d6ff]">&quot;Backend Architectures&quot;</span></span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">11</span>
@@ -100,7 +89,7 @@ export default function About() {
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">14</span>
-                <span>        <span className="text-[#ff7b72]">return</span> <span className="text-[#a5d6ff]">"AI that scales."</span></span>
+                <span>        <span className="text-[#ff7b72]">return</span> <span className="text-[#a5d6ff]">&quot;AI that scales.&quot;</span></span>
               </div>
             </div>
           </div>

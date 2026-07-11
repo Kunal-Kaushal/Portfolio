@@ -63,10 +63,9 @@ export default function StarField() {
         let renderY = star.y - currentScrollY * (star.speed * 2.5);
         renderY = ((renderY % canvas.height) + canvas.height) % canvas.height;
 
-        ctx.beginPath();
-        ctx.arc(star.x, renderY, star.r, 0, Math.PI * 2);
+        // Optimization: fillRect is significantly faster than arc for small shapes
         ctx.fillStyle = `rgba(255,255,255,${twinkle})`;
-        ctx.fill();
+        ctx.fillRect(star.x, renderY, star.r * 2, star.r * 2);
 
         star.y -= star.speed;
       });

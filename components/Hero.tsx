@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import TerminalCard from "./TerminalCard";
+import InteractiveTerminal from "./InteractiveTerminal";
 
 const GithubIcon = ({ size = 24 }: { size?: number }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -47,8 +47,8 @@ export default function Hero() {
         }}
       />
 
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-[1fr_1fr] lg:gap-20">
-        <div className="flex flex-col justify-center">
+      <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between px-6 gap-12 relative z-30">
+        <div className="flex w-full max-w-xl flex-col justify-center">
           <motion.span
             custom={0}
             initial="hidden"
@@ -128,14 +128,10 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: EASE, delay: 0.4 }}
-          className="flex w-full justify-center lg:justify-end"
-        >
-          <TerminalCard />
-        </motion.div>
+        {/* Right side: Terminal */}
+        <div className="hidden lg:block w-full max-w-[500px]">
+          <InteractiveTerminal />
+        </div>
       </div>
     </section>
   );
