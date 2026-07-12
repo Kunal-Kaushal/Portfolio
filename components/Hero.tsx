@@ -101,6 +101,10 @@ export default function Hero() {
           >
             <a
               href="#work"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector("#work")?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="group relative cursor-pointer overflow-hidden rounded-[6px] border border-[#2dd4bf]/20 bg-[#2dd4bf]/[0.06] px-5 py-2.5 text-[13.5px] font-medium text-[#f5f5f5] transition-all duration-200 hover:border-[#2dd4bf]/40 hover:bg-[#2dd4bf]/[0.1] hover:shadow-[0_0_20px_rgba(45,212,191,0.12)]"
             >
               View Work
@@ -119,6 +123,10 @@ export default function Hero() {
 
               <a
                 href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="group flex cursor-pointer items-center gap-1.5 text-[13.5px] text-[#f5f5f5] transition-colors duration-200 hover:text-[#2dd4bf]"
               >
                 <Mail size={16} strokeWidth={1.5} />

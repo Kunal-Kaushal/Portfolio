@@ -32,6 +32,10 @@ export default function Navbar() {
         <div className="flex flex-1 items-center justify-start">
           <a
             href="#top"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             className="group flex cursor-pointer items-center gap-2 font-display text-sm font-semibold tracking-tight"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[#2dd4bf]/80 shadow-[0_0_8px_rgba(45,212,191,0.5)]" />
@@ -52,6 +56,10 @@ export default function Navbar() {
               <li key={l.href}>
                 <a
                   href={l.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.querySelector(l.href)?.scrollIntoView({ behavior: "smooth" });
+                  }}
                   className="cursor-pointer transition-colors duration-200 hover:text-[#f5f5f5]"
                 >
                   {l.label}
@@ -101,7 +109,11 @@ export default function Navbar() {
                 <li key={l.href}>
                   <a
                     href={l.href}
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setMobileMenuOpen(false);
+                      document.querySelector(l.href)?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="block cursor-pointer transition-colors duration-200 hover:text-[#2dd4bf]"
                   >
                     {l.label}
