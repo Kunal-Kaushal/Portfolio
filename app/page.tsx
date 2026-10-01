@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <main className="relative">
       <Preloader />
-      {/* Global starfield — fixed so it persists across all sections */}
+      {/* Global starfield - fixed so it persists across all sections */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <StarField />
       </div>

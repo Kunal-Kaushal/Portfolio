@@ -13,10 +13,10 @@ export default function About() {
             </span>
             <div className="mt-4 space-y-5 text-[15px] leading-[1.8] text-[#f5f5f5]">
               <p>
-                I&apos;m a Generative AI Developer specializing in RAG-based systems, multi-agent orchestration, and secure backend architectures. I focus on bridging the gap between experimental LLM models and real-world applications.
+                I&apos;m an AI Engineer building production RAG pipelines, multi-agent systems, and real-time voice agents in Python. Currently at Droisys, developing an in-house recruiting platform combining hybrid search over 5,000+ resumes, an agentic workflow layer, and an AI phone interviewer.
               </p>
               <p>
-                Currently pursuing my B.Tech in AI &amp; Machine Learning at GL Bajaj Institute, I spend my time architecting solutions like threat analysis dashboards and automated HR agents.
+                Pursuing B.Tech in AI &amp; Machine Learning (2023 - 2027) at GL Bajaj Institute of Technology and Management, focusing on high-performance retrieval architectures, LLMs, and distributed AI agents.
               </p>
             </div>
           </Reveal>
@@ -29,7 +29,7 @@ export default function About() {
             <div className="flex items-center justify-between border-b border-[#1a1a1a] bg-[#111111] px-4 py-2.5">
               <div className="flex items-center gap-2">
                 <span className="text-[#525252]">core/</span>
-                <span className="text-[#f5f5f5]">developer.py</span>
+                <span className="text-[#f5f5f5]">engineer.py</span>
               </div>
             </div>
             
@@ -49,7 +49,7 @@ export default function About() {
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">4</span>
-                <span><span className="text-[#ff7b72]">class</span> <span className="text-[#d2a8ff]">Engineer</span>:</span>
+                <span><span className="text-[#ff7b72]">class</span> <span className="text-[#d2a8ff]">AIEngineer</span>:</span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">5</span>
@@ -57,7 +57,7 @@ export default function About() {
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">6</span>
-                <span>    headline: <span className="text-[#79c0ff]">str</span> = <span className="text-[#a5d6ff]">&quot;GenAI Developer&quot;</span></span>
+                <span>    role: <span className="text-[#79c0ff]">str</span> = <span className="text-[#a5d6ff]">&quot;AIML Trainee @ Droisys&quot;</span></span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">7</span>
@@ -65,15 +65,15 @@ export default function About() {
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">8</span>
-                <span>        <span className="text-[#a5d6ff]">&quot;RAG Pipelines&quot;</span>,</span>
+                <span>        <span className="text-[#a5d6ff]">&quot;Production RAG &amp; Hybrid Search&quot;</span>,</span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">9</span>
-                <span>        <span className="text-[#a5d6ff]">&quot;Multi-Agent AI&quot;</span>,</span>
+                <span>        <span className="text-[#a5d6ff]">&quot;Real-Time Voice Agents (Pipecat)&quot;</span>,</span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">10</span>
-                <span>        <span className="text-[#a5d6ff]">&quot;Backend Architectures&quot;</span></span>
+                <span>        <span className="text-[#a5d6ff]">&quot;Multi-Agent Systems (ADK/LangGraph)&quot;</span></span>
               </div>
               <div className="flex">
                 <span className="w-6 select-none text-[#525252]">11</span>

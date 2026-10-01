@@ -22,7 +22,7 @@ const PROJECTS = [
   },
   {
     name: "Multi-Agent Leave Management",
-    desc: "5 specialized agents orchestrated via Google ADK — automating HR workflows end-to-end with ~80% time saved.",
+    desc: "5 specialized agents orchestrated via Google ADK - automating HR workflows end-to-end with ~80% time saved.",
     stack: ["Python", "Google ADK", "Gemini 2.0", "Firestore", "SendGrid"],
     href: "https://github.com/Kunal-Kaushal/Leave-Management-System",
     icon: Users,

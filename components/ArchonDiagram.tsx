@@ -53,7 +53,7 @@ export default function ArchonDiagram() {
           { x: 10, y: 210, w: 90, label: "Query" },
           { x: 120, y: 210, w: 160, label: "Hybrid Retriever" },
           { x: 300, y: 210, w: 100, label: "Reranker" },
-          { x: 10, y: 290, w: 200, label: "Gemini 2.0 Flash", accent: true },
+          { x: 10, y: 290, w: 200, label: "Gemini 2.5 Flash", accent: true },
           { x: 230, y: 290, w: 130, label: "Response" },
         ].map((b, i) => (
           <g key={i}>

@@ -199,7 +199,7 @@ export default function Footer() {
               <a href="https://linkedin.com/in/kunal-kaushal" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-[#2dd4bf] transition-colors">
                 <LinkedinIcon size={16} />
               </a>
-              <a href="mailto:hi@kunalkaushal.com" aria-label="Email" className="hover:text-[#2dd4bf] transition-colors">
+              <a href="mailto:kunalkaushal.in@gmail.com" aria-label="Email" className="hover:text-[#2dd4bf] transition-colors">
                 <Mail size={16} />
               </a>
             </div>

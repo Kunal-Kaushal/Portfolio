@@ -10,7 +10,7 @@ const LinkedinIcon = ({ size = 24 }: { size?: number }) => (
 );
 
 const LINKS = [
-  { label: "Email", href: "mailto:kunalkaushal921h@gmail.com", icon: Mail },
+  { label: "Email", href: "mailto:kunalkaushal.in@gmail.com", icon: Mail },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/kunal-kaushal-a95479299/", icon: LinkedinIcon },
 ];
 

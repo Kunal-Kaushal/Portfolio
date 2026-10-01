@@ -75,9 +75,9 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             variants={fadeUp}
-            className="mt-4 font-mono text-[12px] uppercase tracking-[0.18em] text-[#2dd4bf]/50"
+            className="mt-4 font-mono text-[12px] uppercase tracking-[0.18em] text-[#2dd4bf]/70"
           >
-            Generative AI Developer
+            AI Engineer
           </motion.p>
 
           <motion.p
@@ -85,11 +85,11 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             variants={fadeUp}
-            className="mt-7 max-w-[460px] text-[16px] leading-[1.7] text-[#f5f5f5]"
+            className="mt-7 max-w-[480px] text-[16px] leading-[1.7] text-[#f5f5f5]"
           >
-            Building RAG pipelines, LLM backends,
+            Building production RAG pipelines, multi-agent architectures, and real-time voice agents.
             <br className="hidden sm:block" />
-            and multi-agent systems that ship.
+            Currently AIML Trainee at <span className="text-[#2dd4bf] font-medium">Droisys</span>.
           </motion.p>
 
           <motion.div

@@ -2,9 +2,9 @@ import Reveal from "./Reveal";
 
 const EDUCATION = [
   {
-    school: "GL Bajaj Institute of Technology and Management",
-    degree: "B.Tech in AI & Machine Learning",
-    date: "2023 — Present",
+    school: "GL Bajaj Institute of Technology and Management, Greater Noida",
+    degree: "B.Tech in Artificial Intelligence & Machine Learning",
+    date: "Oct 2023 - 2027 (Expected)",
   },
   {
     school: "Delhi World Public School Noida Extension",
@@ -18,16 +18,27 @@ const EDUCATION = [
   },
 ];
 
+const CERTIFICATIONS = [
+  {
+    title: "AWS Cloud Foundations",
+    issuer: "Amazon Web Services",
+  },
+  {
+    title: "AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents",
+    issuer: "Udemy",
+  },
+];
+
 export default function Education() {
   return (
     <section id="education" className="border-t border-[#141414] py-20">
       <div className="mx-auto max-w-4xl px-6">
         <Reveal>
           <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#2dd4bf]/55">
-            Education
+            Education &amp; Credentials
           </span>
           <h2 className="mt-4 font-display text-[32px] font-semibold tracking-tight sm:text-[38px]">
-            My Academic Journey.
+            Academic Journey &amp; Certifications.
           </h2>
         </Reveal>
 
@@ -63,6 +74,30 @@ export default function Education() {
               </Reveal>
             ))}
           </div>
+        </div>
+
+        {/* Certifications Subsection */}
+        <div className="mt-16">
+          <Reveal>
+            <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#2dd4bf]/55 mb-6">
+              Certifications
+            </h3>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {CERTIFICATIONS.map((c, i) => (
+                <div
+                  key={i}
+                  className="rounded-xl border border-[#1a1a1a] bg-surface/30 p-5 transition-all duration-300 hover:border-[#2dd4bf]/20 hover:bg-surface/50"
+                >
+                  <p className="font-display text-[15px] font-semibold text-[#f5f5f5]">
+                    {c.title}
+                  </p>
+                  <p className="mt-1 font-mono text-[12px] text-[#a3a3a3]">
+                    {c.issuer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>

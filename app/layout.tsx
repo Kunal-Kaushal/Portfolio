@@ -8,13 +8,13 @@ const geist = DM_Sans({ subsets: ["latin"], variable: "--font-geist", display: "
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kunalkaushal.tech"),
-  title: "Kunal Kaushal — Generative AI Developer",
+  title: "Kunal Kaushal - AI Engineer",
   description:
-    "GenAI Developer building production-grade RAG pipelines, LLM-powered backends, and multi-agent architectures. Based in Noida, India.",
+    "AI Engineer building production RAG pipelines, multi-agent systems, and real-time voice agents in Python. AIML Trainee at Droisys.",
   openGraph: {
-    title: "Kunal Kaushal — Generative AI Developer",
+    title: "Kunal Kaushal - AI Engineer",
     description:
-      "GenAI Developer building production-grade RAG pipelines, LLM-powered backends, and multi-agent architectures.",
+      "AI Engineer building production RAG pipelines, multi-agent systems, and real-time voice agents in Python.",
     url: "https://kunalkaushal.tech",
     siteName: "Kunal Kaushal",
     images: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Kunal Kaushal — GenAI Developer",
+        alt: "Kunal Kaushal - AI Engineer",
       },
     ],
     type: "website",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kunal Kaushal — Generative AI Developer",
+    title: "Kunal Kaushal - AI Engineer",
     description:
-      "GenAI Developer building production-grade RAG pipelines, LLM-powered backends, and multi-agent architectures.",
+      "AI Engineer building production RAG pipelines, multi-agent systems, and real-time voice agents in Python.",
     images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },

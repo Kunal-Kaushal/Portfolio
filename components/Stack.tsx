@@ -3,32 +3,32 @@ import Reveal from "./Reveal";
 
 const GROUPS = [
   {
-    title: "Programming",
-    items: ["Python", "C/C++"],
+    title: "AI & Agents",
+    items: ["RAG", "LLMs", "AI Agents", "Multi-Agent Systems", "Embeddings", "Ollama", "MCP"],
   },
   {
-    title: "AI & ML",
-    items: ["RAG", "FAISS", "SentenceTransformers", "LangChain", "LLM Integration (Gemini, LLaMA)", "Agentic Workflows"],
+    title: "Retrieval & Evaluation",
+    items: ["Hybrid Retrieval", "HNSW", "BM25", "Reciprocal Rank Fusion (RRF)", "RAGAS"],
   },
   {
-    title: "Frameworks",
-    items: ["Google ADK", "Gemini Enterprise"],
+    title: "Frameworks & Backend",
+    items: ["Google ADK", "LangChain", "LangGraph", "Pipecat", "FastAPI", "Flask", "REST APIs", "Pydantic"],
   },
   {
-    title: "Backend Development",
-    items: ["REST API Development", "Flask", "FastAPI"],
+    title: "Data & Vector DBs",
+    items: ["OpenSearch", "FAISS", "ChromaDB", "Pinecone", "pgvector", "SQL", "NoSQL"],
   },
   {
     title: "Cloud & DevOps",
-    items: ["Docker", "GCP (Cloud Run)", "AWS (EC2, S3, IAM)"],
+    items: ["GCP (Cloud Run)", "AWS (EC2, S3, IAM)", "Docker"],
   },
   {
-    title: "Databases",
-    items: ["SQL", "NoSQL", "SQLite", "Firestore"],
+    title: "Programming & CS",
+    items: ["Python", "C/C++", "Data Structures & Algorithms", "Object Oriented Programming"],
   },
   {
-    title: "CS Fundamentals",
-    items: ["Data Structures & Algorithms", "Operating Systems"],
+    title: "Developer Tools",
+    items: ["Git", "GitHub", "Bitbucket", "Jira", "Postman", "VS Code", "GitHub Copilot", "Cursor", "Claude Code", "Codex", "OpenCode", "Antigravity"],
   },
 ];
 
@@ -39,7 +39,7 @@ export default function Stack() {
         <SectionHeading
           eyebrow="Capabilities"
           title="Skills."
-          description="Grouped by capability — the systems and tooling I reach for in production."
+          description="Grouped by capability - the systems and tooling I reach for in production."
         />
         <div className="grid gap-x-12 gap-y-12 md:grid-cols-2">
           {GROUPS.map((g, i) => (

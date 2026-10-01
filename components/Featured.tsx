@@ -8,7 +8,7 @@ const GithubIcon = ({ size = 24 }: { size?: number }) => (
   </svg>
 );
 
-const STACK = ["Python", "FAISS", "BM25", "LangChain", "Gemini 2.0 Flash"];
+const STACK = ["Python", "Gemini 2.5 Flash", "LangChain", "FAISS", "BM25"];
 
 export default function Featured() {
   return (
@@ -23,13 +23,13 @@ export default function Featured() {
               <Database size={22} strokeWidth={1.5} />
             </div>
             <h2 className="font-display text-[34px] font-semibold tracking-tight sm:text-[40px]">
-              Archon
+              Archon: AI Knowledge Assistant
             </h2>
           </div>
           <p className="mt-5 max-w-[460px] text-[15px] leading-[1.7] text-[#f5f5f5]">
-            A production-ready local RAG pipeline. Chat over 500+ documents via a single command —
-            no cloud, no Docker, no setup friction. Hybrid BM25 + FAISS retrieval with Gemini 2.0
-            Flash generation.
+            A high-performance RAG assistant for natural-language Q&amp;A over 1,000+ technical documents.
+            Designed hybrid retrieval combining FAISS dense search with BM25 keyword search, improving relevance
+            on both exact-term and semantic queries, with answers grounded using Gemini 2.5 Flash.
           </p>
           <ul className="mt-8 flex flex-wrap gap-2">
             {STACK.map((s) => (
