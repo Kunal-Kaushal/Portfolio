@@ -9,9 +9,23 @@ const LinkedinIcon = ({ size = 24 }: { size?: number }) => (
   </svg>
 );
 
+const LeetcodeIcon = ({ size = 24 }: { size?: number }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.047 3.864 5.753 5.753 0 0 0 2.219.086 5.578 5.578 0 0 0 1.948-.737l4.05-3.693a1.444 1.444 0 0 0 .167-1.996 1.444 1.444 0 0 0-1.996-.167l-4.05 3.693a2.7 2.7 0 0 1-1.042.42 2.84 2.84 0 0 1-1.082-.047 3.056 3.056 0 0 1-2.072-1.988 2.784 2.784 0 0 1-.176-.525 2.68 2.68 0 0 1-.03-.984 2.688 2.688 0 0 1 .59-1.025l3.85-4.126 4.407-4.788a1.374 1.374 0 0 0-.96-2.433zM16.89 8.232a1.444 1.444 0 0 0-1.444 1.444v6.248a1.444 1.444 0 0 0 2.888 0V9.676a1.444 1.444 0 0 0-1.444-1.444z" />
+  </svg>
+);
+
+const GithubIcon = ({ size = 24 }: { size?: number }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+  </svg>
+);
+
 const LINKS = [
   { label: "Email", href: "mailto:kunalkaushal.in@gmail.com", icon: Mail },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/kunal-kaushal-a95479299/", icon: LinkedinIcon },
+  { label: "GitHub", href: "https://github.com/Kunal-Kaushal", icon: GithubIcon },
+  { label: "LeetCode", href: "https://leetcode.com/u/kunal_921/", icon: LeetcodeIcon },
 ];
 
 export default function Contact() {

@@ -19,6 +19,12 @@ const LinkedinIcon = ({ size = 24 }: { size?: number }) => (
   </svg>
 );
 
+const LeetcodeIcon = ({ size = 24 }: { size?: number }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.047 3.864 5.753 5.753 0 0 0 2.219.086 5.578 5.578 0 0 0 1.948-.737l4.05-3.693a1.444 1.444 0 0 0 .167-1.996 1.444 1.444 0 0 0-1.996-.167l-4.05 3.693a2.7 2.7 0 0 1-1.042.42 2.84 2.84 0 0 1-1.082-.047 3.056 3.056 0 0 1-2.072-1.988 2.784 2.784 0 0 1-.176-.525 2.68 2.68 0 0 1-.03-.984 2.688 2.688 0 0 1 .59-1.025l3.85-4.126 4.407-4.788a1.374 1.374 0 0 0-.96-2.433zM16.89 8.232a1.444 1.444 0 0 0-1.444 1.444v6.248a1.444 1.444 0 0 0 2.888 0V9.676a1.444 1.444 0 0 0-1.444-1.444z" />
+  </svg>
+);
+
 const NUDGE_KEY = "joke-nudge-seen";
 
 export default function Footer() {
@@ -196,8 +202,11 @@ export default function Footer() {
               <a href="https://github.com/Kunal-Kaushal" target="_blank" rel="noreferrer" aria-label="GitHub" className="hover:text-[#2dd4bf] transition-colors">
                 <GithubIcon size={16} />
               </a>
-              <a href="https://linkedin.com/in/kunal-kaushal" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-[#2dd4bf] transition-colors">
+              <a href="https://www.linkedin.com/in/kunal-kaushal-a95479299/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-[#2dd4bf] transition-colors">
                 <LinkedinIcon size={16} />
+              </a>
+              <a href="https://leetcode.com/u/kunal_921/" target="_blank" rel="noreferrer" aria-label="LeetCode" className="hover:text-[#2dd4bf] transition-colors">
+                <LeetcodeIcon size={16} />
               </a>
               <a href="mailto:kunalkaushal.in@gmail.com" aria-label="Email" className="hover:text-[#2dd4bf] transition-colors">
                 <Mail size={16} />
